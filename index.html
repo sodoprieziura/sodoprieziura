@@ -97,12 +97,24 @@
     background: #fff;
   }
 
-  .accordion li {
-    display: flex;
-    justify-content: space-between;
-    padding: 6px 0;
-    border-bottom: 1px dotted #ccc;
-  }
+ .accordion li {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.accordion li span:first-child {
+  flex: 1;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+.accordion li span:last-child {
+  width: 60px; /* ширина ценовой колонки */
+  text-align: right;
+  white-space: nowrap;
+}
 
   .accordion li:last-child {
     border-bottom: none;
