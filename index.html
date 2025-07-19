@@ -79,11 +79,56 @@
   <main>
     <section class="services">
       <h2>Paslaugos ir kainos</h2>
-      <ul>
-        <li><span>Услуга 1</span><span>000 €</span></li>
-        <li><span>Услуга 2</span><span>000 €</span></li>
-        <li><span>Услуга 3</span><span>000 €</span></li>
-      </ul>
+     <style>
+  .accordion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .accordion summary {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .accordion[open] summary {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .accordion ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 16px;
+    background: #fff;
+  }
+
+  .accordion li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .accordion li:last-child {
+    border-bottom: none;
+  }
+</style>
+
+<details class="accordion">
+  <summary>Gyvatvorių karpymas</summary>
+  <ul>
+    <li><span>Iki 1,5 m aukščio</span><span>000 €</span></li>
+    <li><span>Nuo 1,5 iki 3 m</span><span>000 €</span></li>
+    <li><span>Virš 3 m</span><span>000 €</span></li>
+    <li><span>Formavimo darbai</span><span>000 €</span></li>
+  </ul>
+</details>
     </section>
 
     <section class="gallery">
